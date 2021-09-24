@@ -16,11 +16,11 @@ class Http
     /**
     * Prepara os detalhes para efetuar a requisição e formatar o resultado
     * @param array $servico
-    * @param string $parametro
+    * @param string|null $parametro
     *
     * @return array
     */
-    public static function call($servico, $parametro)
+    public static function call(array $servico, ?string $parametro): array
     {
         try {
             $url = $servico['rota'];
@@ -30,12 +30,15 @@ class Http
             }
 
             $cliente = new Client();
-            $resposta = $cliente->request('GET', Servicos::URL_BASE . $url);
 
-            return json_decode($resposta->getBody()->getContents(), true);
+            $resposta = $cliente->request('GET', Servicos::URL_BASE . $url)->getBody();
+
+            return json_decode((string)$resposta, true);
+            
         } catch (ClientException $e) {
             return [
-                'erro' => $servico['erro']
+                'erro' => $servico['erro'],
+                'mensagem' => $e->getMessage(),
             ];
         }
     }

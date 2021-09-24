@@ -19,7 +19,7 @@ class Api
     *
     * @return array
     */
-    public static function requisitando($servico, $parametro = false): array
+    public static function requisitando(array $servico, ?string $parametro = null): array
     {
         return Http::call($servico, $parametro);
     }
