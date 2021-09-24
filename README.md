@@ -6,7 +6,9 @@ Uma maneira simples de interagir com api do Brasil Api.
 
 Pessoal que fez isso aee é do céu mano, tah tudo num lugar só!
 
-Da uma olhadinha no site lah: https://brasilapi.com.br/
+Da uma olhadinha no site lah:
+- [Brasil API](https://brasilapi.com.br/)
+
 
 ```php
 require __DIR__ . '/vendor/autoload.php';
