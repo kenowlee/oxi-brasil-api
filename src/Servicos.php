@@ -3,7 +3,7 @@
 namespace Brasil;
 
 /**
- * Class Servicos
+ * Class Servicos.
  */
 abstract class Servicos
 {

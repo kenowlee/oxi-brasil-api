@@ -3,7 +3,7 @@
 namespace Brasil;
 
 /**
- * Class Validacoes
+ * Class Validacoes.
  */
 trait Validacoes
 {

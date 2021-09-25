@@ -7,7 +7,7 @@ use GuzzleHttp\Exception\ClientException;
 use Brasil\Servicos;
 
 /**
- * Class Api
+ * Class Api.
  */
 class Http
 {

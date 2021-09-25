@@ -2,9 +2,6 @@
 
 namespace Brasil;
 
-use Brasil\Servicos;
-use Brasil\Http;
-
 /**
  * Class Api.
  */
