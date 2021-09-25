@@ -13,7 +13,7 @@ Da uma olhadinha no site lah:
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-Brasil\Api::banco('341');
+(new Brasil\Api)->banco('341');
 
 //resultado
 Array
@@ -31,7 +31,7 @@ Array
 Tah a fim de ver uma lista com todos os bancos no Brasil, olhae como tu faz!
 
 ```php
-Brasil\Api::bancos();
+(new Brasil\Api)->bancos();
 
 //resultado
 Array
@@ -59,7 +59,7 @@ Eta poxa, bão pra cass...
 Agora olha só, como tu faz pra ver mais detalhes de um banco, você só bota o número do banco na função e já era
 
 ```php
-Brasil\Api::banco('341');
+(new Brasil\Api)->banco('341');
 
 //resultado
 Array
@@ -79,13 +79,13 @@ Esse pessoal não perde tempo, da uma olhada ai, como você vê todos os tipo de
 
 ```php
 //Só as marcas das Motoca
-Brasil\Api::motos();
+(new Brasil\Api)->motos();
 
 //Só as Naves
-Brasil\Api::carros();
+(new Brasil\Api)->carros();
 
 //Aqui só os gigantes hein!
-Brasil\Api::caminhoes();
+(new Brasil\Api)->caminhoes();
 
 //resultado das Motoca
 Array
@@ -115,7 +115,7 @@ Caraca, tem coisa demais lah!
 Essa do CEP ficou TOPIII, pq os caras fazem consulta em múltiplos providers.
 
 ```php
-Brasil\Api::cep('18013900');
+(new Brasil\Api)->cep('18013900');
 
 Array
 (
@@ -143,47 +143,47 @@ Ixii mariaaa... olha o restante aee!
 Feriados Nacionais:
 
 ```php
-Brasil\Api::feriados('2021');
+(new Brasil\Api)->feriados('2021');
 ```
 
 CNPJ:
 
 ```php
-Brasil\Api::cnpj('12345678901234');
+(new Brasil\Api)->cnpj('12345678901234');
 ```
 
 Lista de estado:
 
 ```php
-Brasil\Api::estados();
+(new Brasil\Api)->estados();
 ```
 
 Detalhes do Estado:
 
 ```php
-Brasil\Api::estado('SP');
+(new Brasil\Api)->estado('SP');
 ```
 
 Lista de Municipios por Estado:
 
 ```php
-Brasil\Api::municipios('SP');
+(new Brasil\Api)->municipios('SP');
 ```
 
 Tabela de Referencia da FIPE
 
 ```php
-Brasil\Api::fipe('SP');
+(new Brasil\Api)->fipe('SP');
 ```
 Tabela de Preço do Carro FIPE
 
 ```php
-Brasil\Api::precofipe('codigo-fipe');
+(new Brasil\Api)->precofipe('codigo-fipe');
 ```
 
 Retorna estado e lista de cidades por DDD
 ```php
-Brasil\Api::ddd('11');
+(new Brasil\Api)->ddd('11');
 ```
 
 Boa sorte e bom uso pra vc!
