@@ -6,6 +6,8 @@ Uma maneira simples de interagir com api do Brasil Api.
 
 Pessoal que fez isso aee é do céu mano, tah tudo num lugar só!
 
+[![StyleCI](https://github.styleci.io/repos/409769214/shield?branch=main)](https://github.styleci.io/repos/409769214?branch=main)
+
 Da uma olhadinha no site lah:
 - [Brasil API](https://brasilapi.com.br/)
 
