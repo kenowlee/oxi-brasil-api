@@ -27,6 +27,11 @@ Array
 ```
 ## É muito facinho de usar, vê aee!
 
+Instalação via composer
+
+```bash
+$ composer require kenowlee/oxi-brasil-api
+```
 
 Tah a fim de ver uma lista com todos os bancos no Brasil, olhae como tu faz!
 

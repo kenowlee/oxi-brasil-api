@@ -4,13 +4,11 @@ namespace Brasil;
 
 /**
  * Class Validacoes
- * @package Validacoes
- *
  */
 trait Validacoes
 {
     /**
-     * Deixando apenas numeros
+     * Deixando apenas numeros.
      */
     public static function somenteNumeros(string $valor): string
     {
