@@ -4,7 +4,6 @@ namespace Brasil;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use Brasil\Servicos;
 
 /**
  * Class Api.
